@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incredible India - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Hero Section Styling with Overlay */
+.hero-section {
+  position: relative;
+  background: url('images/taj.png') no-repeat center center/cover;
+  height: 100vh;
+  color: white; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Soft overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  color: white  ;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  margin-bottom: 15px;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Incredible India</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section d-flex align-items-center justify-content-center text-center">
+    <div class="hero-content">
+      <h1 class="display-3 fw-bold">Welcome to Incredible India</h1>
+      <p class="lead">Discover breathtaking destinations, rich culture, and unforgettable experiences.</p>
+      <a href="destinations.html" class="btn btn-primary btn-lg mt-3">Explore Destinations</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="container my-5 text-center">
+    <h2>About Our Travel Blog</h2>
+    <p class="mt-3">
+      Incredible India is your gateway to exploring the beauty, culture, and diversity of India.
+      Whether you're interested in street food, heritage, or stunning landscapes, we have curated
+      stories and guides to help you plan your perfect trip.
+    </p>
+  </section>
+
+  <!-- Top Destinations Preview -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Top Destinations</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/goa2.jpg" class="card-img-top" alt="Goa Beach">
+          <div class="card-body">
+            <h5 class="card-title">Goa</h5>
+            <p class="card-text">Beaches, nightlife, and Portuguese charm.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/kerala2.jpg" class="card-img-top" alt="Kerala Backwaters">
+          <div class="card-body">
+            <h5 class="card-title">Kerala</h5>
+            <p class="card-text">Houseboats and serene backwaters.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/jaipur jal.webp" class="card-img-top" alt="Jaipur">
+          <div class="card-body">
+            <h5 class="card-title">Jaipur</h5>
+            <p class="card-text">Palaces, forts, and vibrant markets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="destinations.html" class="btn btn-outline-primary">View All Destinations</a>
+    </div>
+  </section>
+
+  <!-- Blog Preview -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Latest from Our Blog</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/pani puri.png" class="card-img-top" alt="Street Food">
+          <div class="card-body">
+            <h5 class="card-title">Top 5 Indian Street Foods</h5>
+            <p class="card-text">Discover the must-try street foods across India.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/holi.jpg" class="card-img-top" alt="Holi Festival">
+          <div class="card-body">
+            <h5 class="card-title">Experiencing Holi</h5>
+            <p class="card-text">A colorful adventure in Vrindavan.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="images/kerela.jpg" class="card-img-top" alt="Kerala Blog">
+          <div class="card-body">
+            <h5 class="card-title">A Weekend on a Houseboat</h5>
+            <p class="card-text">Serene backwater experience in Kerala.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="blog.html" class="btn btn-outline-primary">View All Blogs</a>
+    </div>
+  </section>
+<button id="backToTop" class="btn btn-primary">↑</button>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p>📧 travel@india.com | 📞 +91-9876543210</p>
+    <p>© 2025 Incredible India</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const backToTop = document.getElementById('backToTop');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      backToTop.style.display = 'block';
+    } else {
+      backToTop.style.display = 'none';
+    }
+  });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>

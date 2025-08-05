@@ -94,3 +94,49 @@ section.container {
   opacity: 1;
   transform: translateY(0);
 }
+.budget-calculator {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.budget-calculator h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.budget-calculator label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.budget-calculator input,
+.budget-calculator select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.budget-calculator button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.result-box {
+  margin-top: 20px;
+  background: #e0ffe0;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+}

@@ -1,0 +1,54 @@
+<!-- budget.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Budget Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="budget-calculator">
+    <h2>Travel Budget Calculator</h2>
+    <form id="budgetForm">
+      <label>Destination:
+        <select id="destination">
+          <option value="goa">Goa</option>
+          <option value="kerala">Kerala</option>
+          <option value="manali">Manali</option>
+          <option value="jaipur">Jaipur</option>
+        </select>
+      </label>
+
+      <label>Number of Days:
+        <input type="number" id="days" min="1" required>
+      </label>
+
+      <label>Number of People:
+        <input type="number" id="people" min="1" required>
+      </label>
+
+      <label>Travel Mode:
+        <select id="travelMode">
+          <option value="flight">Flight</option>
+          <option value="train">Train</option>
+          <option value="bus">Bus</option>
+        </select>
+      </label>
+
+      <label>Accommodation:
+        <select id="accommodation">
+          <option value="budget">Budget</option>
+          <option value="standard">Standard</option>
+          <option value="luxury">Luxury</option>
+        </select>
+      </label>
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div id="result" class="result-box"></div>
+  </section>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
